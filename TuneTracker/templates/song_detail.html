@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ song.title }} by {{ song.artist }}</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        margin: 20px;
+      }
+      h1 {
+        color: #343a40;
+      }
+      p {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      p:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ song.title }} by {{ song.artist }}</h1>
+    <p><strong>Artist:</strong> {{ song.artist }}</p>
+  </body>
+</html>
